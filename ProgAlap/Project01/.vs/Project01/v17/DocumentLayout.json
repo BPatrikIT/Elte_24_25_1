@@ -1,9 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\PatrikITWorkSpace\\ProgAlap\\Project01\\",
+  "WorkspaceRootPath": "C:\\PatrikITWorkSpace\\Elte_24_25_1\\ProgAlap\\Project01\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{14D998A2-FEC9-4CD9-A82C-4F7262DCFE6F}|Project01\\Project01.csproj|c:\\patrikitworkspace\\progalap\\project01\\project01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F1CE9147-543E-4C2F-8587-4B7251BBA5CD}|Homework01\\Homework01.csproj|c:\\patrikitworkspace\\elte_24_25_1\\progalap\\project01\\homework01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1CE9147-543E-4C2F-8587-4B7251BBA5CD}|Homework01\\Homework01.csproj|solutionrelative:homework01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14D998A2-FEC9-4CD9-A82C-4F7262DCFE6F}|Project01\\Project01.csproj|c:\\patrikitworkspace\\elte_24_25_1\\progalap\\project01\\project01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14D998A2-FEC9-4CD9-A82C-4F7262DCFE6F}|Project01\\Project01.csproj|solutionrelative:project01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,9 +24,22 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\PatrikITWorkSpace\\ProgAlap\\Project01\\Project01\\Program.cs",
+              "DocumentMoniker": "C:\\PatrikITWorkSpace\\Elte_24_25_1\\ProgAlap\\Project01\\Homework01\\Program.cs",
+              "RelativeDocumentMoniker": "Homework01\\Program.cs",
+              "ToolTip": "C:\\PatrikITWorkSpace\\Elte_24_25_1\\ProgAlap\\Project01\\Homework01\\Program.cs",
+              "RelativeToolTip": "Homework01\\Program.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAqwDkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T23:54:29.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\PatrikITWorkSpace\\Elte_24_25_1\\ProgAlap\\Project01\\Project01\\Program.cs",
               "RelativeDocumentMoniker": "Project01\\Program.cs",
-              "ToolTip": "C:\\PatrikITWorkSpace\\ProgAlap\\Project01\\Project01\\Program.cs",
+              "ToolTip": "C:\\PatrikITWorkSpace\\Elte_24_25_1\\ProgAlap\\Project01\\Project01\\Program.cs",
               "RelativeToolTip": "Project01\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
