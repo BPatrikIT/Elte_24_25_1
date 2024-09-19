@@ -1,0 +1,7 @@
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Homework02\bin\Debug\Homework02.exe.config
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Homework02\bin\Debug\Homework02.exe
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Homework02\bin\Debug\Homework02.pdb
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Homework02\obj\Debug\Homework02.csproj.AssemblyReference.cache
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Homework02\obj\Debug\Homework02.csproj.CoreCompileInputs.cache
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Homework02\obj\Debug\Homework02.exe
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Homework02\obj\Debug\Homework02.pdb
