@@ -39,10 +39,10 @@ namespace Homework02
             string temporary = "";
             do
             {
-                Console.Write("Which Program do you wan to start? (1 = Signum, 2 = Divide, 3 = 21, Exit - You can use in any input in the code): ");
+                Console.Write("Which Program do you wan to start? (1 = Signum, 2 = Divide, 3 = 21, 4 = LNKO, Exit\nYou can use the Exit in any input: ");
                 program = Console.ReadLine();
                 Terminate(program);
-                if ((program != "1" && program != "2") && (program != "3" && program != "exit"))
+                if (((program != "1" && program != "2") && (program != "3" && program != "exit")) && program != "4")
                 {
                     Console.WriteLine("Invalid input\n");
                     continue;
@@ -173,6 +173,54 @@ namespace Homework02
                             }
                         } while (!isCard);
 
+                        break;
+
+                    case "4":
+                        int number1_LNKO;
+                        int number2_LNKO;
+                        do
+                        {
+                            invalidInput = false;
+                            //First number
+                            Console.Write("Please enter the first number: ");
+                            temporary = Console.ReadLine();
+                            Terminate(temporary);
+                            if (!int.TryParse(temporary, out number1_LNKO) || number1_LNKO <= 0)
+                            {
+                                Console.WriteLine("Invalid input.\n");
+                                invalidInput = true;
+                                continue;
+                            }
+
+                            //Second number
+                            Console.Write("Please enter the second number: ");
+                            temporary = Console.ReadLine();
+                            Terminate(temporary);
+                            if (!int.TryParse(temporary, out number2_LNKO) || number2_LNKO <= 0)
+                            {
+                                Console.WriteLine("\nInvalid input.\n");
+                                invalidInput = true;
+                                continue;
+                            }
+
+                            //Calculation
+                            if (number1_LNKO < number2_LNKO)
+                            {
+                                int temp = number1_LNKO;
+                                number1_LNKO = number2_LNKO;
+                                number2_LNKO = temp;
+                            }
+
+                            int remainder = number1_LNKO % number2_LNKO;
+                            while (remainder > 0)
+                            {
+                                number1_LNKO = number2_LNKO;
+                                number2_LNKO = remainder;
+                                remainder = number1_LNKO % number2_LNKO;
+                            }
+                            Console.WriteLine("\nThe Greatest Common Divisor is: {0}\n", number2_LNKO);
+
+                        } while (invalidInput);
                         break;
                 }
             }
