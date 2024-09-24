@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.IO.Pipes;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Runtime.Remoting.Services;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -37,12 +38,26 @@ namespace Homework02
         {
             string program = "";
             string temporary = "";
+
+            List<Card> cards = new List<Card>();
+            cards.Add(new Card("alsó", 2));
+            cards.Add(new Card("felső", 3));
+            cards.Add(new Card("király", 4));
+            cards.Add(new Card("vii", 7));
+            cards.Add(new Card("viii", 8));
+            cards.Add(new Card("ix", 9));
+            cards.Add(new Card("x", 10));
+            cards.Add(new Card("ász", 11));
+
+            bool isCard = false;
+            string cardName = "";
+
             do
             {
-                Console.Write("Which Program do you wan to start? (1 = Signum, 2 = Divide, 3 = 21, 4 = LNKO, Exit\nYou can use the Exit in any input: ");
+                Console.Write("Which Program do you wan to start? (1 = Signum, 2 = Divide, 3 = 21, 4 = LNKO, 5 = n cards, Exit\nYou can use the Exit in any input: ");
                 program = Console.ReadLine();
                 Terminate(program);
-                if (((program != "1" && program != "2") && (program != "3" && program != "exit")) && program != "4")
+                if (((program != "1" && program != "2") && (program != "3" && program != "exit")) && (program != "4" && program !="5"))
                 {
                     Console.WriteLine("Invalid input\n");
                     continue;
@@ -137,19 +152,6 @@ namespace Homework02
                         break;
 
                     case "3":
-                        List<Card> cards = new List<Card>();
-                        cards.Add(new Card("alsó", 2));
-                        cards.Add(new Card("felső", 3));
-                        cards.Add(new Card("király", 4));
-                        cards.Add(new Card("vii", 7));
-                        cards.Add(new Card("viii", 8));
-                        cards.Add(new Card("ix", 9));
-                        cards.Add(new Card("x", 10));
-                        cards.Add(new Card("ász", 11));
-
-                        bool isCard = false;
-                        string cardName = "";
-
                         do
                         {
                             Console.Write("Please enter a card name: ");
@@ -221,6 +223,46 @@ namespace Homework02
                             Console.WriteLine("\nThe Greatest Common Divisor is: {0}\n", number2_LNKO);
 
                         } while (invalidInput);
+                        break;
+
+                    case "5":
+                        int deckValue = 0;
+                        bool deckEnd = false;
+
+
+                        do
+                        {
+                            do
+                            {
+                                Console.Write("Please enter a from your deck! (enter \"end\" when you have no more cards.): ");
+                                temporary = Console.ReadLine();
+                                Terminate(temporary);
+                                cardName = temporary;
+                                cardName = cardName.ToLower();
+
+                                if (cardName == "end")
+                                {
+                                    deckEnd = true;
+                                    break;
+                                }
+
+                                for (int i = 0; i < cards.Count; i++)
+                                {
+                                    if (cardName == cards[i].Value)
+                                    {
+                                        isCard = true;
+                                        deckValue += cards[i].Point;
+                                        break;
+                                    }
+                                }
+                                if (!isCard)
+                                {
+                                    Console.WriteLine("\nInvalid card. You entered \"{0}\". Please review your input and enter a valid card.\n", cardName);
+                                }
+                            } while (!isCard);
+                        }
+                        while (!deckEnd);
+                        Console.WriteLine("\nThe value of your deck is: {0}\n", deckValue);
                         break;
                 }
             }
