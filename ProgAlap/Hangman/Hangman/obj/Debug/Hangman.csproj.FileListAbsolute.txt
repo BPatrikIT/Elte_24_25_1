@@ -1,0 +1,7 @@
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Hangman\Hangman\obj\Debug\Hangman.csproj.AssemblyReference.cache
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Hangman\Hangman\obj\Debug\Hangman.csproj.CoreCompileInputs.cache
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Hangman\Hangman\bin\Debug\Hangman.exe.config
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Hangman\Hangman\bin\Debug\Hangman.exe
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Hangman\Hangman\bin\Debug\Hangman.pdb
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Hangman\Hangman\obj\Debug\Hangman.exe
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Hangman\Hangman\obj\Debug\Hangman.pdb
