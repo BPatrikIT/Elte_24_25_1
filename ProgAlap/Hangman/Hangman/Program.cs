@@ -151,7 +151,16 @@ namespace Hangman
             }
             catch (Exception) // Loads the current user's stats to the listRankingStats if the ranking.txt file does not exists
             {
-                int temp = (User.gamesWon * 100) / User.gamesPlayed;
+                int temp;
+                if (User.gamesWon == 0 || User.gamesPlayed ==0)
+                {
+                    temp = 0;   
+                }
+                else
+                {
+                    temp = (User.gamesWon * 100) / User.gamesPlayed;
+
+                }
                 listRankingStats.Add(new rankingStats(User.userName, User.allTimeScore, User.highScore, User.gamesPlayed, User.gamesWon, temp));
             }
         }
@@ -167,14 +176,28 @@ namespace Hangman
                     listRankingStats[i].highScore = User.highScore;
                     listRankingStats[i].gamesPlayed = User.gamesPlayed;
                     listRankingStats[i].gamesWon = User.gamesWon;
-                    listRankingStats[i].winRate = (User.gamesWon * 100) / User.gamesPlayed;
+                    if (User.gamesWon == 0 || User.gamesPlayed == 0)
+                    {
+                        listRankingStats[i].winRate = 0;
+                    } else
+                    {
+                        listRankingStats[i].winRate = (User.gamesWon * 100) / User.gamesPlayed;
+                    }
                     isInList = true;
                     break;
                 }
             }
             if (!isInList) // Loads the current user's stats to the listRankingStats if the ranking.txt file does not exists
             {
-                int temp = (User.gamesWon * 100) / User.gamesPlayed;
+                int temp;
+                if (User.gamesWon == 0 || User.gamesPlayed == 0)
+                {
+                    temp = 0;
+                }
+                else
+                {
+                    temp = (User.gamesWon * 100) / User.gamesPlayed;
+                }
                 listRankingStats.Add(new rankingStats(User.userName, User.allTimeScore, User.highScore, User.gamesPlayed, User.gamesWon, temp));
             }
 
@@ -276,7 +299,7 @@ namespace Hangman
             int choice;
             if (int.TryParse(Console.ReadLine(), out choice)) // Checks all the possibilities for the word type changes (if the choise is an int)
             {
-                if (choice == wordTypeList.Count()+1) // If chanes the "back"
+                if (choice == wordTypeList.Count()+1) // If choice the "back"
                 {
                     settings();
                 }else if(choice > wordTypeList.Count()+1 || choice <= 0) // If choice is not an available number
@@ -519,21 +542,47 @@ namespace Hangman
             switch (choice)
             {
                 case 1:
-
-                    for (int i = 0; i < User.wordTypes.Count(); i++)
+                    if (User.wordTypes[0] == "All")
                     {
-                        StreamReader sr = new StreamReader(User.wordTypes[i] + ".txt");
-                        string line = sr.ReadLine();
-                        while (line != null)
+                        List<string> tempWordTypeList = new List<string>();
+                        StreamReader tempSr = new StreamReader("wordTypes.txt");
+                        string tempLine = tempSr.ReadLine();
+                        while (tempLine != null)
                         {
-                            words.Add(line);
-                            line = sr.ReadLine();
+                            tempWordTypeList.Add(tempLine);
+                            tempLine = tempSr.ReadLine();
                         }
-                        sr.Close();
+                        tempSr.Close();
+                        for (int i = 0; i < tempWordTypeList.Count(); i++)
+                        {
+                            StreamReader sr = new StreamReader(tempWordTypeList[i] + ".txt");
+                            string line = sr.ReadLine();
+                            while (line != null)
+                            {
+                                words.Add(line);
+                                line = sr.ReadLine();
+                            }
+                            sr.Close();
+                        }
+
+                    }
+                    else
+                    {
+                        for (int i = 0; i < User.wordTypes.Count(); i++)
+                        {
+                            StreamReader sr = new StreamReader(User.wordTypes[i] + ".txt");
+                            string line = sr.ReadLine();
+                            while (line != null)
+                            {
+                                words.Add(line);
+                                line = sr.ReadLine();
+                            }
+                            sr.Close();
+                        }
                     }
 
                     Random rnd = new Random();
-                    int index = rnd.Next(words.Count); // Chooses a random word from the provided list
+                    int index = rnd.Next(words.Count()); // Chooses a random word from the provided list
                     string word = words[index];
 
                     char[] wordArray = word.ToCharArray(); // Adds the characters of the choosen word to a character list
@@ -671,7 +720,14 @@ namespace Hangman
             Console.WriteLine("Games Played: " + User.gamesPlayed);
             Console.WriteLine("Games Won: " + User.gamesWon);
             Console.WriteLine("Games Lost: " + User.gamesLost);
-            Console.WriteLine("Win rate: " + (User.gamesWon * 100) / User.gamesPlayed + "%");
+            if (User.gamesPlayed == 0 || User.gamesWon == 0)
+            {
+                Console.WriteLine("Win rate: 0%");
+            }
+            else
+            {
+                Console.WriteLine("Win rate: " + (User.gamesWon * 100) / User.gamesPlayed + "%");
+            }
             Console.WriteLine("\nPress any key to continue.");
             Console.ReadKey();
             menu();
@@ -743,6 +799,7 @@ namespace Hangman
                 User.loadUSerInfos();
                 loadRankings();
                 updateRanking();
+                loadRankings();
                 menu();
             }
             while (!exit);
