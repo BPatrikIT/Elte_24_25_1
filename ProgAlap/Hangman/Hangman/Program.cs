@@ -54,8 +54,8 @@ namespace Hangman
             catch (Exception)
             {
 
-            }
-
+            }            
+            User.wordTypes.Clear();
             if (fileExists) // Set the user infos into the User class if the user file exist
             {
                 gameMode = tempListUserData[1].Substring(11);
@@ -137,6 +137,7 @@ namespace Hangman
         
         public static void loadRankings() //Loads the best stats for every user
         {
+            listRankingStats.Clear();
             try
             {
                 StreamReader sr = new StreamReader("ranking.txt");
