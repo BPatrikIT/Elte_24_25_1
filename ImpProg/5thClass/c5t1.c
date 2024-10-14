@@ -8,6 +8,8 @@
 
 void arr_wsum( int arr[], size_t n);
 void arr_wavg( int arr[], int w[], size_t n);
+void arr_switch( int arr[], size_t n);
+void lineCounter();
 
 
 int main(){
@@ -84,16 +86,22 @@ int main(){
     }
     */
 
+   /*
     //char word[BUFFER+1];
     char word[DIM+1];
     printf("Enter a word: ");
     fgets(word, DIM+1, stdin);
-    /*scanf("%s", word);*/
+    //scanf("%s", word);
 
     printf("The word is: %s\n", word);
     size_t strs = strlen(word);
     printf("The length of the word is: %lu\n", strs);
+    */
 
+    int arr[] = {8,6,4,2,0,9,7,5,3,1};
+    size_t n = sizeof(arr)/sizeof(arr[0]);
+    //arr_switch(arr, n);
+    lineCounter();
     
 
     return 0;
@@ -116,4 +124,45 @@ void arr_wavg( int arr[], int w[], size_t n){
         sums += arr[i] * w[i];
     }
     printf("Weighted average of arr: %.2f\n", (float)sums/n);
+}
+
+void arr_switch( int arr[], size_t n){
+    int min = arr[0];
+    int max = arr[0];
+    int min_i = 0;
+    int max_i = 0;
+    for (size_t i = 1; i < n; i++){
+        if (arr[i] < min) {
+            min = arr[i];
+            min_i = i;
+        }
+        if (arr[i] > max) {
+            max = arr[i];
+            max_i = i;
+        }
+    }
+
+    arr[min_i] = max;
+    arr[max_i] = min;
+
+    printf("The new array is: \n");
+
+    for (size_t i = 0; i < n; i++)
+    {
+        printf("%d \n", arr[i]);
+    }
+}
+
+void lineCounter(){
+    printf("Enter a text, type exit to exit: \n");
+    _Bool exit = 0;
+    int lines = 0;
+    //do
+    //{
+    //char line[BUFFER+1];
+    //fgets(line, BUFFER+1, stdin);
+    //size_t len = strlen(line);
+    
+    //} while (/* condition */);
+   
 }
