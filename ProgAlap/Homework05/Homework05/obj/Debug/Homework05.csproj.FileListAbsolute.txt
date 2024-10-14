@@ -1,0 +1,7 @@
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Homework05\Homework05\bin\Debug\Homework05.exe.config
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Homework05\Homework05\bin\Debug\Homework05.exe
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Homework05\Homework05\bin\Debug\Homework05.pdb
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Homework05\Homework05\obj\Debug\Homework05.csproj.AssemblyReference.cache
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Homework05\Homework05\obj\Debug\Homework05.csproj.CoreCompileInputs.cache
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Homework05\Homework05\obj\Debug\Homework05.exe
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Homework05\Homework05\obj\Debug\Homework05.pdb
