@@ -1,0 +1,7 @@
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\primEldontes\primEldontes\bin\Debug\primEldontes.exe.config
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\primEldontes\primEldontes\bin\Debug\primEldontes.exe
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\primEldontes\primEldontes\bin\Debug\primEldontes.pdb
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\primEldontes\primEldontes\obj\Debug\primEldontes.csproj.AssemblyReference.cache
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\primEldontes\primEldontes\obj\Debug\primEldontes.csproj.CoreCompileInputs.cache
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\primEldontes\primEldontes\obj\Debug\primEldontes.exe
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\primEldontes\primEldontes\obj\Debug\primEldontes.pdb
