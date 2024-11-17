@@ -26,3 +26,18 @@ lambda2 = function2 (\x y -> 1 * x - y)
 
 lambda3 :: Integer
 lambda3 = function3 (\x -> x * 2) (\y -> y * (-1))
+
+lambda4 :: Integer
+lambda4 = function4 (\x -> x * 50) (\y -> y + 7)
+
+lambda5 :: Integer
+lambda5 = function5 (\x y -> 2 * x + y) (\z -> z + 118)
+
+propEq :: Eq b => a -> a -> (a -> b) -> Bool
+propEq x y f = f x == f y
+
+sumVia :: Num b => (a -> b) -> [a] -> b
+sumVia f = sum . map f
+
+concatWith :: (a -> [b]) -> [a] -> [b]
+concatWith f = concat . map f
