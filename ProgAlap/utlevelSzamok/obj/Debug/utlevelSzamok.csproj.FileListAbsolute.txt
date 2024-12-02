@@ -1,0 +1,7 @@
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\utlevelSzamok\bin\Debug\utlevelSzamok.exe.config
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\utlevelSzamok\bin\Debug\utlevelSzamok.exe
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\utlevelSzamok\bin\Debug\utlevelSzamok.pdb
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\utlevelSzamok\obj\Debug\utlevelSzamok.csproj.AssemblyReference.cache
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\utlevelSzamok\obj\Debug\utlevelSzamok.csproj.CoreCompileInputs.cache
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\utlevelSzamok\obj\Debug\utlevelSzamok.exe
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\utlevelSzamok\obj\Debug\utlevelSzamok.pdb

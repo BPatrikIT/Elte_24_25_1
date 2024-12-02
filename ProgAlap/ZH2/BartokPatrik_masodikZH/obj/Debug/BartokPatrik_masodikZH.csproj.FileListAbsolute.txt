@@ -1,0 +1,7 @@
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\ZH2\BartokPatrik_masodikZH\obj\Debug\BartokPatrik_masodikZH.csproj.AssemblyReference.cache
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\ZH2\BartokPatrik_masodikZH\obj\Debug\BartokPatrik_masodikZH.csproj.CoreCompileInputs.cache
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\ZH2\BartokPatrik_masodikZH\bin\Debug\BartokPatrik_masodikZH.exe.config
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\ZH2\BartokPatrik_masodikZH\bin\Debug\BartokPatrik_masodikZH.exe
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\ZH2\BartokPatrik_masodikZH\bin\Debug\BartokPatrik_masodikZH.pdb
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\ZH2\BartokPatrik_masodikZH\obj\Debug\BartokPatrik_masodikZH.exe
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\ZH2\BartokPatrik_masodikZH\obj\Debug\BartokPatrik_masodikZH.pdb
