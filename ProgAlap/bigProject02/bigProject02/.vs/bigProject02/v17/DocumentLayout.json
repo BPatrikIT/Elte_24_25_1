@@ -1,9 +1,16 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\BPatrikITWorkSpace\\Elte_24_25_1\\ProgAlap\\bigProject02\\bigProject02\\",
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{EC002BC6-B02F-4CC1-B53B-D55F1704D931}|bigProject02.csproj|c:\\bpatrikitworkspace\\elte_24_25_1\\progalap\\bigproject02\\bigproject02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+  "WorkspaceRootPath": "C:\\PatrikITWorkSpace\\Elte_24_25_1\\ProgAlap\\bigProject02\\bigProject02\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EC002BC6-B02F-4CC1-B53B-D55F1704D931}|bigProject02.csproj|c:\\patrikitworkspace\\elte_24_25_1\\progalap\\bigproject02\\bigproject02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 08f5ebfb3fa6efc3d988436297e4d3ea0f06f0dd
       "RelativeMoniker": "D:0:0:{EC002BC6-B02F-4CC1-B53B-D55F1704D931}|bigProject02.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,6 +21,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 1,
           "Children": [
             {
@@ -31,6 +39,21 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T21:29:09.48Z",
+=======
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\PatrikITWorkSpace\\Elte_24_25_1\\ProgAlap\\bigProject02\\bigProject02\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\PatrikITWorkSpace\\Elte_24_25_1\\ProgAlap\\bigProject02\\bigProject02\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAA+wH4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T21:59:57.607Z",
+>>>>>>> 08f5ebfb3fa6efc3d988436297e4d3ea0f06f0dd
               "EditorCaption": ""
             }
           ]
