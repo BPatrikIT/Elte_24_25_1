@@ -1,0 +1,7 @@
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\bigProject02\bigProject02\bin\Debug\bigProject02.exe.config
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\bigProject02\bigProject02\bin\Debug\bigProject02.exe
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\bigProject02\bigProject02\bin\Debug\bigProject02.pdb
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\bigProject02\bigProject02\obj\Debug\bigProject02.csproj.AssemblyReference.cache
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\bigProject02\bigProject02\obj\Debug\bigProject02.csproj.CoreCompileInputs.cache
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\bigProject02\bigProject02\obj\Debug\bigProject02.exe
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\bigProject02\bigProject02\obj\Debug\bigProject02.pdb
