@@ -1,0 +1,7 @@
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Gyak\lotto\bin\Debug\lotto.exe.config
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Gyak\lotto\bin\Debug\lotto.exe
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Gyak\lotto\bin\Debug\lotto.pdb
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Gyak\lotto\obj\Debug\lotto.csproj.AssemblyReference.cache
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Gyak\lotto\obj\Debug\lotto.csproj.CoreCompileInputs.cache
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Gyak\lotto\obj\Debug\lotto.exe
+C:\PatrikITWorkSpace\Elte_24_25_1\ProgAlap\Gyak\lotto\obj\Debug\lotto.pdb

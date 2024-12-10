@@ -56,7 +56,7 @@ getOp :: (Floating a) => Char -> Maybe (Tok a)
 getOp = operatorFromChar operatorTable
 
 parseTokens :: (Read a, Floating a) => OperatorTable a -> String -> Maybe [Tok a]
-parseTokens table = fmap concat . mapM (parseToken table) . wordsBy isSpace
+parseTokens table = fmap concat . mapM (parseToken table . (:[])) . filter (not . isSpace)
 
 wordsBy :: (Char -> Bool) -> String -> [String]
 wordsBy p s = case dropWhile p s of
@@ -73,9 +73,13 @@ parseToken table str
       Nothing -> case readMaybe str of
         Just lit -> Just [TokLit lit]
         Nothing -> Nothing
-  | otherwise = case readMaybe str of
-      Just lit -> Just [TokLit lit]
-      Nothing -> Nothing
+  | otherwise = case getOp (head str) of
+      Just op -> case readMaybe (tail str) of
+        Just lit -> Just [op, TokLit lit]
+        Nothing -> Nothing
+      Nothing -> case readMaybe str of
+        Just lit -> Just [TokLit lit]
+        Nothing -> Nothing
 
 parse :: String -> Maybe [Tok Double]
 parse = parseTokens operatorTable
